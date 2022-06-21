@@ -1,0 +1,30 @@
+<html>
+
+<head>
+    {% include 'header.html' %}
+</head>
+<!-- Portfolio Section-->
+<section class="page-section portfolio" id="portfolio" style="background-color: #E5E5E5;">
+    <div class="container text-center">
+        <h2 class="page-section-heading text-center mt-5" style="color:#000">Result</h2>
+        <br>
+        {%if name%}
+        <p>Hi, {{name}} <br>
+            {%endif%}
+            {%if pred==1%}
+            You are Eligible to get the Covid-19 Vaccine. For the next procedure please visit the Vaccination spot.
+            {%endif%}
+            {%if pred==2%}
+            You are being Postponed to get the Covid-19 Vaccine for some reason. Please come back after 14 days.
+            {%endif%}
+            {%if pred==3%}
+            You are Not Eligible to get the Covid-19 Vaccine. For more info contact National Covid-19 Force.
+            {%endif%}
+        </p>
+
+        <button class="btn btn-dark">View in PDF</button>
+    </div>
+</section>
+{% include 'footer.html' %}
+
+</html>

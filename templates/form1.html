@@ -1,0 +1,44 @@
+<html>
+
+<head>
+    {% include 'header.html' %}
+</head>
+
+<body>
+    <!-- Portfolio Section-->
+    <section class="page-section portfolio" id="portfolio" style="background-color: #E5E5E5;">
+        <div class="container">
+            <h2 class="page-section-heading text-center mt-5" style="color:#000">Data screening Covid-19 Vaccination
+                Form</h2>
+            <br>
+            <form id="formClassify" action="/screening" method="POST">
+                <div class="row">
+                    <div class="col-md-8">
+                        <p class="prp"> Terms & Condition : <br>
+                            - All question are required to be answered<br>
+                            - By filling this form, i hereby to answer the question with honestly and correctly
+                            information
+                            based on my on health issue and willing to get the vaccination<br>
+                            - What ever the result patients are asked to obey it
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-8">
+                    </div>
+                    <div class="col-md-2">
+                        <input type="radio" id="agree" name="agreement" value="agree">
+                        <label for="agree">AGREE</label><br>
+                    </div>
+                    <div class="col-md-2">
+                        <input type="radio" id="disagree" name="agreement" value="disagree">
+                        <label for="disagree">DISAGREE</label><br><br>
+                        <button class="btn btn-dark">Proceed</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+    {% include 'footer.html' %}
+
+</html>

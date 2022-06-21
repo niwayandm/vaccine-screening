@@ -1,0 +1,36 @@
+<html>
+
+<head>
+    {% include 'header.html' %}
+</head>
+
+<body>
+    <!-- Portfolio Section-->
+    <section class="page-section portfolio" id="portfolio" style="background-color: #000;">
+        <div class="container">
+            <!-- Portfolio Section Heading-->
+            <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0"
+                style="color: #fff !important;">GET TO KNOW MORE ABOUT VACCINATION</h2>
+            <br>
+            <br>
+            <br>
+            <!-- Portfolio Grid Items-->
+            <div class="row justify-content-center">
+                <!-- Portfolio Item 1-->
+                <div class="col-md-6 col-lg-4 mb-5">
+                    <div class="portfolio-item mx-auto">
+                        <div
+                            class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                            <div class="portfolio-item-caption-content text-center text-white"><i
+                                    class="fas fa-plus fa-3x"></i></div>
+                        </div>
+                        <img class="img-fluid" src="{{ url_for('static',filename='assets/img/benefit.png')}}"
+                            alt="..." />
+                    </div>
+                    <h4 style="color:#fff;text-align: center;padding-top:15px;">BENEFITS</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</html>

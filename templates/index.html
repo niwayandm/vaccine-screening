@@ -1,0 +1,93 @@
+<html>
+
+<head>
+    {% include 'header.html' %}
+</head>
+
+<body>
+    <!-- Masthead-->
+    <header class="masthead bg-primary text-white text-center">
+        <div class="container d-flex align-items-center flex-column">
+            <!-- Masthead Heading-->
+            <h3 class="masthead-heading text-uppercase ">Vaccination trains the body to recognize, fight and be immune
+            </h3>
+            <br>
+            <!-- Masthead Subheading-->
+            <button class="btn-outline-primary">Read more</button>
+        </div>
+    </header>
+    <!-- Portfolio Section-->
+    <section class="page-section portfolio" id="portfolio" style="background-color: #000;">
+        <div class="container">
+            <!-- Portfolio Section Heading-->
+            <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0"
+                style="color: #fff !important;">GET TO KNOW MORE ABOUT VACCINATION</h2>
+            <br>
+            <br>
+            <br>
+            <!-- Portfolio Grid Items-->
+            <div class="row justify-content-center">
+                <!-- Portfolio Item 1-->
+                <div class="col-md-6 col-lg-4 mb-5">
+                    <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal1">
+                        <div
+                            class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                            <div class="portfolio-item-caption-content text-center text-white"><i
+                                    class="fas fa-plus fa-3x"></i></div>
+                        </div>
+                        <img class="img-fluid" src="{{ url_for('static',filename='assets/img/benefit.png')}}"
+                            alt="..." />
+                    </div>
+                    <h4 style="color:#fff;text-align: center;padding-top:15px;">BENEFITS</h4>
+                </div>
+                <!-- Portfolio Item 2-->
+                <div class="col-md-6 col-lg-4 mb-5">
+                    <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal2">
+                        <div
+                            class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                            <div class="portfolio-item-caption-content text-center text-white"><i
+                                    class="fas fa-plus fa-3x"></i></div>
+                        </div>
+                        <img class="img-fluid" src="{{ url_for('static',filename='assets/img/infographic.png')}}"
+                            alt="..." />
+                    </div>
+                    <h4 style="color:#fff;text-align: center;padding-top:15px;">INFOGRAPHIC</h4>
+                </div>
+                <!-- Portfolio Item 3-->
+                <div class="col-md-6 col-lg-4 mb-5">
+                    <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal3">
+                        <div
+                            class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                            <div class="portfolio-item-caption-content text-center text-white"><i
+                                    class="fas fa-plus fa-3x"></i></div>
+                        </div>
+                        <img class="img-fluid" src="{{ url_for('static',filename='assets/img/types.png')}}" alt="..." />
+                    </div>
+                    <h4 style="color:#fff;text-align: center;padding-top:15px;">TYPES</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- About Section-->
+    <section class="page-section bg-success text-white mb-0" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-6 text-center" style="margin:auto;display:flex;">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/ni4Huz0BIZA"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="col-md-6 col-sm-6">
+                    <a class="btn btn-light" href="{{ url_for('agreement') }}">CLICK HERE TO START<br>
+                        <!--Redirect ke form1-->
+                        <b>PRE-VACCINATION SCREENING</b>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    {% include 'footer.html' %}
+
+</html>
